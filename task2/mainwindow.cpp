@@ -3,7 +3,7 @@
 
 #include <QThreadPool>
 
-const long long ITERATION_MAX = 50000000;
+const long long ITERATION_MAX = 100000000;
 const int TASK_COUNT = 50;
 
 MainWindow::MainWindow(QWidget *parent)
