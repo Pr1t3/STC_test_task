@@ -70,3 +70,13 @@ install(TARGETS task3
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(task3)
 endif()
+
+set(CPACK_PACKAGE_NAME "stc-task3")
+set(CPACK_PACKAGE_VERSION "1.0.0")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Test task TCP Server Application")
+set(CPACK_PACKAGE_VENDOR "Provatorov Roman")
+set(CPACK_PACKAGE_CONTACT "romapro2005@gmail.com")
+set(CPACK_DEBIAN_PACKAGE_DEPENDS "libqt5core5a, libqt5gui5, libqt5widgets5, libqt5network5")
+set(CPACK_DEBIAN_PACKAGE_ARCHITECTURE "amd64")
+set(CPACK_GENERATOR "DEB")
+include(CPack)
